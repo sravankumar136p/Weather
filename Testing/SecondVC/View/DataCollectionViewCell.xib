@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DataCollectionViewCell" customModule="Testing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bm6-cj-YTd">
+                        <rect key="frame" x="4" y="4" width="42" height="42"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-6P-fua">
+                                <rect key="frame" x="0.5" y="0.5" width="41.5" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBu-H7-mKV">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nml-mA-Q19">
+                                        <rect key="frame" x="0.0" y="20.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JDe-6P-fua" firstAttribute="centerY" secondItem="bm6-cj-YTd" secondAttribute="centerY" id="MsH-4U-JR2"/>
+                            <constraint firstItem="JDe-6P-fua" firstAttribute="centerX" secondItem="bm6-cj-YTd" secondAttribute="centerX" id="gJT-t1-0DF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="bm6-cj-YTd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="C7l-y2-tSn"/>
+                <constraint firstAttribute="bottom" secondItem="bm6-cj-YTd" secondAttribute="bottom" constant="4" id="kdj-1T-Exq"/>
+                <constraint firstItem="bm6-cj-YTd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="luj-zG-Qes"/>
+                <constraint firstAttribute="trailing" secondItem="bm6-cj-YTd" secondAttribute="trailing" constant="4" id="z3K-Vi-odW"/>
+            </constraints>
+            <connections>
+                <outlet property="backGroundView" destination="bm6-cj-YTd" id="ca3-Af-gUn"/>
+                <outlet property="description_lbl" destination="nml-mA-Q19" id="FHF-Py-Tub"/>
+                <outlet property="title_lbl" destination="ZBu-H7-mKV" id="UWc-wR-CIV"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="60"/>
+        </collectionViewCell>
+    </objects>
+</document>
